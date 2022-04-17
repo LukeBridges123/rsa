@@ -225,7 +225,7 @@ while (isRunning):
         pubMod = int(input("Enter public modulus..."))
         toSign = int(input("Enter message to be signed..."))
         print("Your signed message is:")
-            print(encryptDecrypt(privKey, pubMod, toSign))
+        print(encryptDecrypt(privKey, pubMod, toSign))
     elif (userChoice == 'ver'):
         pubKey = int(input("Enter public key/public exponent..."))
         pubMod = int(input("Enter public modulus..."))
