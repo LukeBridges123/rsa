@@ -61,7 +61,7 @@ def primeSieve(n:int):
     #list of all primes seen so far.
     primeList = []
     
-    currNum = 2;
+    currNum = 2
     while (currNum <= n):
         primeList.append(currNum)
         #eliminate multiples of currNum by marking them False in boolList.
@@ -175,7 +175,7 @@ isRunning = True;
 while (isRunning):
     userChoice = input("Welcome to Simple RSA! Enter 'gen' to generate keys, 'enc' to encrypt, 'dec' to decrypt, 'brk' to break, 'q' to quit.");
     if (userChoice == 'gen'):
-        userChoice = input("Enter 'rand' to randomly generate your primes, and 'choose' to enter primes of your choice.");
+        userChoice = input("Enter 'rand' to randomly generate your primes, and 'choose' to enter primes of your choice.")
         if (userChoice == 'rand'):
             prime1 = randPrime()
             prime2 = randPrime()
@@ -186,13 +186,13 @@ while (isRunning):
             while ((not probPrimeTest(prime1)) or (prime1 <= 0)):
                 print("Value entered is not positive or not prime. Please try again.")
                 prime1 = int(input("Enter first prime..."))
-            prime2 = int(input("Enter second prime..."));
+            prime2 = int(input("Enter second prime..."))
             while ((not probPrimeTest(prime2)) or (prime2 <= 0)):
                 print("Value entered is not positive or not prime. Please try again.")
                 prime2 = int(input("Enter second prime..."))
             genKeys(prime1, prime2);
         else:
-            print("Invalid input. Please try again.");
+            print("Invalid input. Please try again.")
     elif (userChoice == 'enc'):
         pubKey = int(input("Enter public key/public exponent..."))
         pubMod = int(input("Enter public modulus..."))
